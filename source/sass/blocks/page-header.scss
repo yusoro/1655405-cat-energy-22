@@ -43,8 +43,7 @@
 
 .menu-list__link {
   text-decoration: none;
-  font-family: Oswald;
-  font-weight: 500;
+  @include medium-text;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
@@ -54,6 +53,7 @@
 .menu-list__item {
   padding: 0 0 24px;
   text-align: center;
+
   &::before {
     content: "";
     display: block;

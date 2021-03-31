@@ -12,8 +12,7 @@
   margin-bottom: 25px;
 }
 .stats__number {
-  font-family: "Oswald Regular";
-  font-weight: 400;
+  @include regular-text;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -35,9 +34,8 @@
 }
 .slider__before,
 .slider__after {
-  font-family: "Oswald Regular";
+  @include regular-text
   text-transform: uppercase;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
