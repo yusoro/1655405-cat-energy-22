@@ -1,0 +1,28 @@
+@mixin text-content {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $special-dark-grey;
+  margin: 0;
+  padding: 0;
+}
+@mixin title {
+  font-family: "Oswald Regular";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: $basic-black;
+  margin: 0;
+  padding: 0;
+}
+@mixin regular-text {
+  font-family: "Oswald Regular";
+  font-weight: 400;
+}
+@mixin medium-text {
+  font-family: "Oswald Medium";
+  font-weight: 500;
+}
+

@@ -1,0 +1,43 @@
+.programms {
+  background-color: $basic-white;
+  padding: 22px 20px 0;
+}
+.programms__item {
+  width: 280px;
+  box-sizing: border-box;
+  background-color: $basic-grey;
+  padding: 30px 20px 23px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.item__title {
+  font-family: "Oswald Regular";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+}
+.item__description {
+  @include text-content;
+  &:after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 1px;
+    background-color: $line-color;
+    margin: 33px 0 15px;
+  }
+}
+.item__link {
+  font-family: "Oswald Regular";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $basic-black;
+}

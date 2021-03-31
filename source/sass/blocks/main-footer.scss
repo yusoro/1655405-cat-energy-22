@@ -1,0 +1,65 @@
+.contacts {
+  background-color: $basic-white;
+  padding: 28px 20px 0;
+}
+.contacts__lead {
+  @include title;
+  font-size: 16px;
+  line-height: 18px;
+}
+.contacts__address {
+  @include text-content;
+  line-height: 20px;
+}
+
+.page-footer__logo {
+  background-color: $basic-grey;
+  text-align: center;
+  padding: 39px 0 0;
+  margin: 0;
+  &:after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: $line-color;
+    margin: 33px 0 0;
+  }
+}
+
+.page-footer__social {
+  background-color: $basic-grey;
+  padding: 20px 0;
+  text-align: center;
+  &:after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: $line-color;
+    margin-top: 20px;
+  }
+}
+.social__link {
+  padding: 0;
+  margin: 0;
+}
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.page-footer__copyright {
+  background-color: $basic-grey;
+  padding: 20px 30px;
+}
+.copyright__text {
+  @include text-content;
+  font-size: 18px;
+}
+.contacts__map {
+  margin: 0;
+  margin-left: -20px;
+  margin-top: 26px;
+  border: none;
+}

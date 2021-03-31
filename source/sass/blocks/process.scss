@@ -1,0 +1,21 @@
+.process {
+  background-color: $basic-white;
+  margin-top: 27px;
+  margin-bottom: 42px;
+  padding: 0 20px;
+}
+.process__title {
+  @include title;
+  margin-bottom: 38px;
+  text-transform: none;
+}
+.process__steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include text-content;
+}
+.process__item {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
