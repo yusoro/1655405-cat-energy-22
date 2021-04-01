@@ -2,15 +2,18 @@
   background-color: $special-light-grey;
   padding: 27px 20px 25px;
 }
+
 .example__title {
   @include title;
   margin-bottom: 33px;
   text-transform: none;
 }
+
 .example__content {
   @include text-content;
   margin-bottom: 25px;
 }
+
 .stats__number {
   @include regular-text;
   font-size: 24px;
@@ -18,6 +21,7 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .stats__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
@@ -25,6 +29,7 @@
   line-height: 12px;
   text-align: center;
 }
+
 .stats__cost {
   @include text-content;
   line-height: 20px;
@@ -32,10 +37,10 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .slider__before,
 .slider__after {
-  @include regular-text
-  text-transform: uppercase;
+  @include regular-text text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
 }

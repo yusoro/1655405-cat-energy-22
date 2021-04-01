@@ -7,7 +7,7 @@
   margin: 0;
   position: relative;
 
-  &:before {
+  &::before {
     content: "";
     width: 25px;
     height: 1.5px;
@@ -18,7 +18,7 @@
     top: 5px;
   }
 
-  &:after {
+  &::after {
     content: "";
     width: 25px;
     height: 1.5px;
@@ -43,6 +43,7 @@
 
 .menu-list__link {
   text-decoration: none;
+
   @include medium-text;
   font-size: 20px;
   line-height: 20px;
