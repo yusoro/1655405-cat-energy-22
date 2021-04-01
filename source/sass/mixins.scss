@@ -9,7 +9,7 @@
 }
 
 @mixin title {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -20,11 +20,11 @@
 }
 
 @mixin regular-text {
-  font-family: "Oswald Regular";
+  font-family: "Oswald Regular", sans-serif;
   font-weight: 400;
 }
 
 @mixin medium-text {
-  font-family: "Oswald Medium";
+  font-family: "Oswald Medium", sans-serif;
   font-weight: 500;
 }
