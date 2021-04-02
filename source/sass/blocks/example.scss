@@ -30,7 +30,7 @@
   text-align: center;
 }
 
-.stats__cost {
+.example__costs {
   @include text-content;
   line-height: 20px;
   color: $basic-black;
@@ -40,7 +40,8 @@
 
 .slider__before,
 .slider__after {
-  @include regular-text text-transform: uppercase;
+  @include regular-text;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
 }

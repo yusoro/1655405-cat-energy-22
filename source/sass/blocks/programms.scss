@@ -12,7 +12,7 @@
   margin-bottom: 20px;
 }
 
-.item__title {
+.programm__title {
   @include regular-text;
   text-transform: uppercase;
   font-size: 24px;
@@ -23,7 +23,7 @@
   padding: 0;
 }
 
-.item__description {
+.programm__description {
   @include text-content;
 
   &::after {
@@ -36,7 +36,7 @@
   }
 }
 
-.item__link {
+.programm__link {
   @include regular-text;
   text-transform: uppercase;
   font-size: 16px;
