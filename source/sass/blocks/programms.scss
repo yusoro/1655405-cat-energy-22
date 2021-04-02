@@ -27,11 +27,8 @@
   @include text-content;
 
   &::after {
-    content: "";
-    display: block;
+    @include line-element;
     width: 240px;
-    height: 1px;
-    background-color: $line-color;
     margin: 33px 0 15px;
   }
 }

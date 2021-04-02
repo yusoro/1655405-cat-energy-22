@@ -28,3 +28,11 @@
   font-family: "Oswald Medium", sans-serif;
   font-weight: 500;
 }
+
+@mixin line-element {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 1px;
+  background-color: $line-color;
+}
