@@ -17,13 +17,13 @@
 .page-footer__logo {
   background-color: $basic-grey;
   text-align: center;
-  padding: 39px 0 0;
+  padding: 39px 20px 0;
   margin: 0;
 
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 280px;
     height: 1px;
     background-color: $line-color;
     margin: 33px 0 0;
@@ -32,13 +32,13 @@
 
 .page-footer__social {
   background-color: $basic-grey;
-  padding: 20px 0;
+  padding: 20px 20px;
   text-align: center;
 
   &::after {
     content: "";
     display: block;
-    width: 320px;
+    width: 280px;
     height: 1px;
     background-color: $line-color;
     margin-top: 20px;
@@ -58,7 +58,7 @@
 
 .page-footer__copyright {
   background-color: $basic-grey;
-  padding: 20px 30px;
+  padding: 20px 20px;
 }
 
 .copyright__text {

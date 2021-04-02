@@ -1,9 +1,6 @@
 .promo {
-  background: url("../img/promo-foodpack.png") no-repeat, linear-gradient($green-mask 63%, $basic-white 63%), url("../img/bg-main.jpg") no-repeat;
-  background-position: center 165px, top, top;
-  height: 480px;
-  position: relative;
-  box-sizing: border-box;
+  background: url("../img/bg-main-s.png") no-repeat;
+  background-position: top;
 }
 
 .promo__wrapper {
@@ -26,10 +23,9 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 .promo__programms {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
+  margin: 0 auto;
 }
