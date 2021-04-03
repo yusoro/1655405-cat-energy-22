@@ -1,0 +1,31 @@
+.promo {
+  background: url("../img/bg-main-s.png") no-repeat;
+  background-position: top;
+}
+
+.promo__wrapper {
+  text-align: center;
+  padding-top: 27px;
+}
+
+.promo__title {
+  @include regular-text;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $basic-white;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.promo__slogan {
+  @include regular-text;
+  text-transform: uppercase;
+  color: $basic-white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.promo__programms {
+  margin: 0 auto;
+}

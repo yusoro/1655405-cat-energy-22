@@ -1,0 +1,47 @@
+.example {
+  background-color: $special-light-grey;
+  padding: 27px 20px 25px;
+}
+
+.example__title {
+  @include title;
+  margin-bottom: 33px;
+  text-transform: none;
+}
+
+.example__content {
+  @include text-content;
+  margin-bottom: 25px;
+}
+
+.stats__number {
+  @include regular-text;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.stats__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__costs {
+  @include text-content;
+  line-height: 20px;
+  color: $basic-black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slider__before,
+.slider__after {
+  @include regular-text;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+}

@@ -1,0 +1,43 @@
+.programms {
+  background-color: $basic-white;
+  padding: 22px 20px 0;
+}
+
+.programms__item {
+  width: 280px;
+  box-sizing: border-box;
+  background-color: $basic-grey;
+  padding: 30px 20px 23px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.programm__title {
+  @include regular-text;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37px;
+  color: $basic-black;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+}
+
+.programm__description {
+  @include text-content;
+
+  &::after {
+    @include line-element;
+    width: 240px;
+    margin: 33px 0 15px;
+  }
+}
+
+.programm__link {
+  @include regular-text;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  color: $basic-black;
+}

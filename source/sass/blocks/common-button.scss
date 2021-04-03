@@ -1,0 +1,16 @@
+.common-button {
+  width: 280px;
+  background-color: $basic-green;
+  color: $basic-white;
+  text-align: center;
+  display: block;
+
+  @include regular-text;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
