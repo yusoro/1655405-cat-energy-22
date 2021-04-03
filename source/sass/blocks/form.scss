@@ -1,0 +1,128 @@
+.form {
+  @include form-text;
+}
+
+.form__input {
+  @include form-text;
+
+  border: 1px solid $input-border;
+
+  &--petname {
+    width: 228px;
+  }
+
+  &--weight {
+    width: 191px;
+  }
+
+  &--age {
+    width: 172px;
+  }
+}
+
+.form__fieldset--petinfo .form__input {
+  height: 45px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+}
+
+.form__fieldset--petinfo .form__label {
+  margin-bottom: 13px;
+}
+
+.form__textarea {
+  @include form-text;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 150.5px;
+  border: 1px solid $input-border;
+}
+
+.form__note {
+  @include text-content;
+  line-height: 16px;
+  text-transform: none;
+  color: $basic-black;
+  margin: 21px 61px 32px;
+  display: block;
+}
+
+.form__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.form__fieldset--petinfo,
+.form__fieldset--petinfo .form__input::placeholder {
+  color: $special-dark-grey;
+}
+
+.form__fieldset--programms {
+  position: relative;
+  padding: 11px 0 20px;
+
+  &::after {
+    @include line-element;
+    width: 320px;
+    margin-left: -40px;
+    margin-top: 15px;
+  }
+
+  &::before {
+    @include line-element;
+    width: 320px;
+    margin-left: -40px;
+    margin-bottom: 22px;
+  }
+}
+
+.form__legend {
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+  color: $basic-black;
+}
+
+.form__input--radio,
+.form__input--checkbox {
+  margin-left: 0;
+  margin-right: 15px;
+  margin-bottom: 13px;
+}
+
+.form__fieldset--contacts {
+  padding-top: 35px;
+  padding-bottom: 24px;
+  color: $special-dark-grey;
+}
+
+.form__fieldset--contacts .form__input {
+  height: 45px;
+  padding: 13px 15px;
+  box-sizing: border-box;
+
+  &--email {
+    width: 219px;
+  }
+
+  &--tel {
+    width: 204px;
+  }
+}
+
+.form__fieldset--contacts .form__label {
+  margin-bottom: 13px;
+}
+
+.form__fieldset--comments {
+  padding-top: 38px;
+  padding-bottom: 23px;
+}
+
+.form__fieldset--additional {
+  padding: 34px 0 34px;
+}
