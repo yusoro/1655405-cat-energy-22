@@ -1,12 +1,17 @@
 .contacts {
+  background-color: $basic-grey;
+  padding: 0 20px 0;
+}
+
+.contacts--main {
   background-color: $basic-white;
-  padding: 28px 20px 0;
 }
 
 .contacts__lead {
   @include title;
   font-size: 16px;
   line-height: 18px;
+  color: $special-black;
 }
 
 .contacts__address {
@@ -55,7 +60,7 @@
 
 .copyright__text {
   @include text-content;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .contacts__map {
@@ -63,4 +68,8 @@
   margin-left: -20px;
   margin-top: 26px;
   border: none;
+}
+
+.page-footer__contacts {
+  padding-top: 28px;
 }

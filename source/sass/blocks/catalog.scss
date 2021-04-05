@@ -1,0 +1,10 @@
+.catalog__wrapper {
+  padding: 27px 0 35px;
+}
+
+.catalog__title {
+  @include title;
+  text-transform: none;
+  line-height: 36px;
+  margin: 0 20px 41px;
+}
