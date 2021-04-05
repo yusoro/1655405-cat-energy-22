@@ -7,6 +7,7 @@
   @include title;
   font-size: 16px;
   line-height: 18px;
+  color: $special-black;
 }
 
 .contacts__address {
@@ -55,7 +56,7 @@
 
 .copyright__text {
   @include text-content;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .contacts__map {
