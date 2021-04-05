@@ -1,0 +1,16 @@
+.promo-gift {
+  background: url("../img/gift-bg.png") no-repeat top;
+  padding: 58px 61px 43px 58px;
+  text-align: center;
+  min-height: 289px;
+  box-sizing: border-box;
+}
+
+.promo-gift__text {
+  margin: 0;
+
+  @include text-content;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+}
