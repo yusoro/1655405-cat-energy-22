@@ -1,0 +1,19 @@
+.programm-search {
+  padding: 0 20px;
+}
+
+.programm-search__title {
+  @include regular-text;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+}
+
+.programm-search__lead {
+  @include regular-text;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-black;
+  text-transform: uppercase;
+  margin-bottom: 39px;
+}
