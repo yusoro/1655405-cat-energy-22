@@ -1,15 +1,39 @@
 .programms {
   background-color: $basic-white;
-  padding: 22px 20px 0;
+}
+
+.programms__wrapper {
+  margin: 22px 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 22px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 22px 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programms__item {
-  width: 280px;
+  min-width: 280px;
   box-sizing: border-box;
   background-color: $basic-grey;
   padding: 30px 20px 23px;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 0 55px 53px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 77px 51px 55px 52px;
+    width: 570px;
+  }
 }
 
 .programm__title {

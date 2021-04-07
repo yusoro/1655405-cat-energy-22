@@ -2,7 +2,18 @@
   background-color: $basic-white;
   margin-top: 27px;
   margin-bottom: 42px;
-  padding: 0 20px;
+}
+
+.process__wrapper {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+  }
 }
 
 .process__title {
@@ -17,6 +28,20 @@
   margin: 0;
 
   @include text-content;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content min-content;
+    column-gap: 153px;
+    row-gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: min-content;
+    column-gap: 70px;
+  }
 }
 
 .process__item {
