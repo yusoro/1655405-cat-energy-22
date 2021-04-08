@@ -10,7 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 22px 110px;
+    margin: 0 110px;
+    padding-top: 82px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -18,7 +19,7 @@
 }
 
 .programms__item {
-  min-width: 280px;
+  width: 100%;
   box-sizing: border-box;
   background-color: $basic-grey;
   padding: 30px 20px 23px;
@@ -27,12 +28,12 @@
 
   @media (min-width: $tablet-width) {
     padding: 77px 0 55px 53px;
-    width: 708px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
     padding: 77px 51px 55px 52px;
-    width: 570px;
+    width: 100%;
   }
 }
 
@@ -54,6 +55,10 @@
     @include line-element;
     width: 240px;
     margin: 33px 0 15px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
@@ -64,4 +69,10 @@
   line-height: 16px;
   text-decoration: none;
   color: $basic-black;
+}
+
+.programms__item--slim {
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+  }
 }
