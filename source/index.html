@@ -2,22 +2,23 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo">
-          <img src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
-          <img src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+        <a class="page-header__logo header-logo">
+          <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
+          <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
         </a>
         <nav class="page-nav">
           <button class="page-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="page-nav__wrapper">
-            <ul class=" menu-list">
+            <ul class="menu-list">
               <li class="menu-list__item menu-list__item--current">
                 <a class="menu-list__link">Главная</a>
               </li>
@@ -96,9 +97,11 @@
           <div class="slider">
             <img src="img/catlook-before.jpg" width="311" height="232" alt="Фотография кота с лишним весом">
             <img src="img/catlook-after.jpg" width="251" height="240" alt="Фотография похудевшего кота">
-            <span class="slider__before">было</span>
-            <button class="slider__toggle"></button>
-            <span class="slider__after">стало</span>
+            <div class="slider__controls">
+              <span class="slider__before">было</span>
+              <button class="slider__toggle"></button>
+              <span class="slider__after">стало</span>
+            </div>
           </div>
         </div>
       </section>

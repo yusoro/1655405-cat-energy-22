@@ -1,11 +1,48 @@
 .promo {
-  background: url("../img/bg-main-s.png") no-repeat;
+  background: url("../img/mask.png") no-repeat, url("../img/bg-main.jpg") no-repeat;
+  background-size: 100% 302px, auto;
   background-position: top;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    background: $basic-white;
+    z-index: -2;
+  }
+
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      width: 720px;
+      height: 694px;
+      background: url("../img/bg-main-l.png") no-repeat;
+      position: absolute;
+      top: -147px;
+      right: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .promo__wrapper {
   text-align: center;
   padding-top: 27px;
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-rows: min-content min-content min-content min-content;
+    grid-template-columns: 1fr;
+    text-align: left;
+    margin: 0 30px;
+    padding: 0 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 110px;
+    padding: 0 80px;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-columns: min-content min-content;
+  }
 }
 
 .promo__title {
@@ -16,6 +53,18 @@
   color: $basic-white;
   margin: 0;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    grid-row: 1/2;
+    text-align: left;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    grid-column: 1/2;
+  }
 }
 
 .promo__slogan {
@@ -24,8 +73,45 @@
   color: $basic-white;
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    color: $basic-black;
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-bottom: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    grid-column: 1/2;
+  }
 }
 
 .promo__programms {
   margin: 0 auto;
+  grid-row: 3/4;
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: flex-end;
+    grid-column: 1/2;
+  }
+}
+
+.promo__img {
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    grid-row: 3/5;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
 }
