@@ -3,10 +3,11 @@
   background-size: 320px 302px, cover 302px;
   background-position: top, 65% 0;
   position: relative;
-@media (min-width: 563px) {
-  background-size: 100% 302px;
 
-}
+  @media (min-width: 563px) {
+    background-size: 100% 302px;
+  }
+
   @media (min-width: $tablet-width) {
     background: $basic-white;
     z-index: -2;

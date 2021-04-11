@@ -52,7 +52,7 @@
   @media (min-width: $tablet-width) {
     align-self: center;
     justify-self: flex-start;
-    margin: 21px 0px 32px;
+    margin: 21px 0 32px;
   }
 }
 
@@ -76,6 +76,10 @@
 .form__fieldset--programms {
   position: relative;
   padding: 11px 0 20px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 
   &::after {
     @include line-element;
@@ -166,6 +170,11 @@
 
 .form__fieldset--additional {
   padding: 34px 0 34px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .form__fieldset--petinfo .form__label,
@@ -188,13 +197,6 @@
   }
 }
 
-.form__fieldset--additional {
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
 .form__fieldset--additional .form__label {
   @media (min-width: $tablet-width) {
     flex-basis: 50%;
@@ -208,11 +210,5 @@
 .form__fieldset--petinfo {
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-  }
-}
-
-.form__fieldset--programms {
-  @media (min-width: $desktop-width) {
-    grid-column: 2/3;
   }
 }
