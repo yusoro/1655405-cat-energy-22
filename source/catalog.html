@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -52,11 +53,11 @@
                     <td class="feature-list__description">Масса</td>
                     <td class="feature-list__value">500 г</td>
                   </tr>
-                  <tr>
+                  <tr class="feature-list__item">
                     <td class="feature-list__description">Вкус</td>
                     <td class="feature-list__value">Курица</td>
                   </tr>
-                  <tr>
+                  <tr class="feature-list__item">
                     <td class="feature-list__description">Цена</td>
                     <td class="feature-list__value">700 Р.</td>
                   </tr>
@@ -75,15 +76,15 @@
                   </h3>
                 </a>
                 <table class="feature-list">
-                  <tr>
+                  <tr class="feature-list__item">
                     <td class="feature-list__description">Масса</td>
                     <td class="feature-list__value">1000 г</td>
                   </tr>
-                  <tr>
+                  <tr class="feature-list__item">
                     <td class="feature-list__description">Вкус</td>
                     <td class="feature-list__value">Курица</td>
                   </tr>
-                  <tr>
+                  <tr class="feature-list__item">
                     <td class="feature-list__description">Цена</td>
                     <td class="feature-list__value">1000 Р.</td>
                   </tr>
@@ -102,15 +103,15 @@
                 </h3>
               </a>
               <table class="feature-list">
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Масса</td>
                   <td class="feature-list__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Вкус</td>
                   <td class="feature-list__value">Рыба</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Цена</td>
                   <td class="feature-list__value">700 Р.</td>
                 </tr>
@@ -129,15 +130,15 @@
                 </h3>
               </a>
               <table class="feature-list">
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Масса</td>
                   <td class="feature-list__value">1000 г</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Вкус</td>
                   <td class="feature-list__value">Рыба</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Цена</td>
                   <td class="feature-list__value">1000 Р.</td>
                 </tr>
@@ -156,15 +157,15 @@
                 </h3>
               </a>
               <table class="feature-list">
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Масса</td>
                   <td class="feature-list__value">500 г</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Вкус</td>
                   <td class="feature-list__value">Гречка</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Цена</td>
                   <td class="feature-list__value">400 Р.</td>
                 </tr>
@@ -183,15 +184,15 @@
                 </h3>
               </a>
               <table class="feature-list">
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Масса</td>
                   <td class="feature-list__value">1000 г</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Вкус</td>
                   <td class="feature-list__value">Гречка</td>
                 </tr>
-                <tr>
+                <tr class="feature-list__item">
                   <td class="feature-list__description">Цена</td>
                   <td class="feature-list__value">700 Р.</td>
                 </tr>
@@ -201,30 +202,30 @@
             </li>
             <li class="product-item">
               <div class="product-item__wrapper">
-              <a class="product-item__link product-item__link--img" href="#">
-                <img class="product-item__image product-item__image--s" src="img/img-rice-s.png" width="68" height="78" alt="Изображение упаковки корма">
-              </a>
-              <a class="product-item__link product-item__link--title" href="#">
-                <h3 class="product-item__title">Cat Energy <br>
-                  slim 500 г
-                </h3>
-              </a>
-              <table class="feature-list">
-                <tr>
-                  <td class="feature-list__description">Масса</td>
-                  <td class="feature-list__value">500 г</td>
-                </tr>
-                <tr>
-                  <td class="feature-list__description">Вкус</td>
-                  <td class="feature-list__value">Рис</td>
-                </tr>
-                <tr>
-                  <td class="feature-list__description">Цена</td>
-                  <td class="feature-list__value">500 Р.</td>
-                </tr>
-              </table>
-              <a href="#" class="product-item__button common-button">Заказать</a>
-            </div>
+                <a class="product-item__link product-item__link--img" href="#">
+                  <img class="product-item__image product-item__image--s" src="img/img-rice-s.png" width="68" height="78" alt="Изображение упаковки корма">
+                </a>
+                <a class="product-item__link product-item__link--title" href="#">
+                  <h3 class="product-item__title">Cat Energy <br>
+                    slim 500 г
+                  </h3>
+                </a>
+                <table class="feature-list">
+                  <tr class="feature-list__item">
+                    <td class="feature-list__description">Масса</td>
+                    <td class="feature-list__value">500 г</td>
+                  </tr>
+                  <tr class="feature-list__item">
+                    <td class="feature-list__description">Вкус</td>
+                    <td class="feature-list__value">Рис</td>
+                  </tr>
+                  <tr class="feature-list__item">
+                    <td class="feature-list__description">Цена</td>
+                    <td class="feature-list__value">500 Р.</td>
+                  </tr>
+                </table>
+                <a href="#" class="product-item__button common-button">Заказать</a>
+              </div>
             </li>
             <li class="product-item product-item--all">
               <div class="product-item__wrapper">
@@ -240,47 +241,47 @@
               <li class="product-item product-item--additional">
                 <h3 class="product-item__title product-item__title--additional">Сахарозаменитель</h3>
                 <table class="product-item__info">
-                  <tr>
+                  <tr class="product-item__details">
                     <td class="product-item__quantity">1 упаковка (100 г)</td>
                     <td class="product-item__cost">200 Р.</td>
                   </tr>
                 </table>
-                <a href="#" class="product-item__button common-button">Заказать</a>
+                <a href="#" class="product-item__button--additional common-button">Заказать</a>
               </li>
               <li class="product-item product-item--additional">
                 <h3 class="product-item__title product-item__title--additional">питьевая вода</h3>
                 <table class="product-item__info">
-                  <tr>
+                  <tr class="product-item__details">
                     <td class="product-item__quantity">5 литров</td>
                     <td class="product-item__cost">50 Р.</td>
                   </tr>
                 </table>
-                <a href="#" class="common-button">Заказать</a>
+                <a href="#" class="product-item__button--additional common-button">Заказать</a>
               </li>
               <li class="product-item product-item--additional">
                 <h3 class="product-item__title product-item__title--additional">молоко</h3>
                 <table class="product-item__info">
-                  <tr>
+                  <tr class="product-item__details">
                     <td class="product-item__quantity">1 литр</td>
                     <td class="product-item__cost">100 Р.</td>
                   </tr>
                 </table>
-                <a href="#" class="common-button">Заказать</a>
+                <a href="#" class="product-item__button--additional common-button">Заказать</a>
               </li>
               <li class="product-item product-item--additional">
                 <h3 class="product-item__title product-item__title--additional">витамины</h3>
                 <table class="product-item__info">
-                  <tr>
+                  <tr class="product-item__details">
                     <td class="product-item__quantity">1 упаковка (30 г)</td>
                     <td class="product-item__cost">300 Р.</td>
                   </tr>
                 </table>
-                <a href="#" class="common-button">Заказать</a>
+                <a href="#" class="product-item__button--additional common-button">Заказать</a>
               </li>
             </ul>
           </div>
           <div class="promo-gift">
-          <p class="promo-gift__text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+            <p class="promo-gift__text">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
           </div>
         </div>
       </section>
