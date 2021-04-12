@@ -98,7 +98,9 @@
     font-size: 18px;
     line-height: 24px;
   }
+}
 
+.menu-list__link--main {
   @media (min-width: $desktop-width) {
     color: $basic-white;
   }

@@ -1,8 +1,12 @@
 .promo {
-  background: url("../img/mask.png") no-repeat, url("../img/bg-main.jpg") no-repeat;
-  background-size: 100% 302px, auto;
-  background-position: top;
+  background: url("../img/mask.png") repeat-x, url("../img/bg-main-s.jpg") no-repeat;
+  background-size: 320px 302px, cover 302px;
+  background-position: top, 65% 0;
   position: relative;
+
+  @media (min-width: 563px) {
+    background-size: 100% 302px;
+  }
 
   @media (min-width: $tablet-width) {
     background: $basic-white;
@@ -94,6 +98,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 244px;
+    height: 54px;
   }
 
   @media (min-width: $desktop-width) {
