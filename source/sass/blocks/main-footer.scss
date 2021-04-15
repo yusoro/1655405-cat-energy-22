@@ -175,6 +175,8 @@
   align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
+  max-width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
