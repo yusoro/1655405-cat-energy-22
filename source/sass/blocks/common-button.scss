@@ -14,3 +14,12 @@
   text-transform: uppercase;
   box-sizing: border-box;
 }
+
+.common-button:hover {
+  background-color: $basic-green-2;
+}
+
+.common-button:active {
+  background-color: $basic-green-2;
+  color: $basic-white-active;
+}

@@ -1,12 +1,8 @@
 .promo {
-  background: url("../img/mask.png") repeat-x, url("../img/bg-main-s.jpg") no-repeat;
-  background-size: 320px 302px, cover 302px;
-  background-position: top, 65% 0;
+  background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") no-repeat;
+  background-size: cover;
+  background-position: 0 0, 65% -40px;
   position: relative;
-
-  @media (min-width: 563px) {
-    background-size: 100% 302px;
-  }
 
   @media (min-width: $tablet-width) {
     background: $basic-white;
@@ -30,7 +26,6 @@
 .promo__wrapper {
   text-align: center;
   padding-top: 27px;
-  margin: 0 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -38,14 +33,14 @@
     grid-template-columns: 1fr;
     text-align: left;
     margin: 0 30px;
-    padding: 0 87px;
+    padding: 62px 87px 0;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 110px;
     padding: 0 80px;
     grid-template-rows: min-content min-content min-content;
-    grid-template-columns: min-content min-content;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -55,10 +50,11 @@
   line-height: 36px;
   text-align: center;
   color: $basic-white;
-  margin: 0;
-  margin-bottom: 25px;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
     color: $basic-black;
     grid-row: 1/2;
     text-align: left;
@@ -68,6 +64,7 @@
   @media (min-width: $desktop-width) {
     align-self: flex-end;
     grid-column: 1/2;
+    margin-top: 80px
   }
 }
 
@@ -76,9 +73,11 @@
   text-transform: uppercase;
   color: $basic-white;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
     color: $basic-black;
     grid-row: 2/3;
     grid-column: 1/2;
@@ -95,8 +94,11 @@
   margin: 0 auto;
   grid-row: 3/4;
   grid-column: 1/2;
+  max-width: 244px;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 15px;
     margin: 0;
     width: 244px;
     height: 54px;
@@ -105,19 +107,30 @@
   @media (min-width: $desktop-width) {
     align-self: flex-end;
     grid-column: 1/2;
+    margin-bottom: 160px;
   }
 }
 
 .promo__img {
+  width: 280px;
+  height: 270px;
+
   @media (min-width: $tablet-width) {
-    justify-self: center;
+    width: 709px;
+    height: 609px;
+    justify-self: flex-start;
     grid-row: 3/5;
     grid-column: 1/2;
+    margin-left: -80px;
+    margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
-
-    grid-column: 2/3;
-    grid-row: 1/4;
+    width: 552px;
+    height: 499px;
+    margin: 0;
+    position: absolute;
+    left: 558px;
+    top: 0;
   }
 }
