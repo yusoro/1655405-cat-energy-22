@@ -79,10 +79,8 @@
 .menu-list__item--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $basic-green;
-
   }
 }
-
 
 .menu-list__item--current .menu-list__link--main {
   @media (min-width: $desktop-width) {

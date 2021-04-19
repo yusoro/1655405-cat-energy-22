@@ -1,5 +1,4 @@
 .process {
-  background-color: $basic-white;
   margin-top: 27px;
   margin-bottom: 42px;
 }
@@ -48,10 +47,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
-    column-gap: 153px;
-    row-gap: 37px;
+    //column-gap: 153px;
+    //row-gap: 37px;
     font-size: 16px;
     line-height: 24px;
+    counter-reset: item-number;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +64,33 @@
 .process__item {
   margin-bottom: 20px;
   clear: both;
+  position: relative;
+  margin-right: 100px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.process__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: item-number;
+    content: counter(item-number);
+    width: 112px;
+    height: 280px;
+    color: $basic-grey;
+    font-size: 280px;
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    z-index: -1;
+
+    @include regular-text;
+  }
 }
 
 .process__item--useful::before {

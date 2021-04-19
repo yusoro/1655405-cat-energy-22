@@ -26,19 +26,20 @@
   }
 }
 
-.page-nav--nojs  {
+.page-nav--nojs {
   & .page-nav__toggle {
-     @media (max-width: $mobile-width-only) {
-    display: none;
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
-  }
- & .menu-list__item {
-  @media (max-width: $mobile-width-only) {
-    display: block;
-  }
- }
 
+  & .menu-list__item {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+    }
+  }
 }
+
 .page-nav__toggle {
   width: 18px;
   height: 18px;

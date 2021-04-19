@@ -1,0 +1,49 @@
+.social__link {
+  padding: 0;
+  margin: 0;
+}
+
+.social__link--vkontakte {
+  margin-right: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 27px;
+  }
+}
+
+.social__link--facebook {
+  margin-right: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 21px;
+  }
+}
+
+.social__link--vkontakte:hover path,
+.social__link--instagram:hover path {
+  fill: $basic-green;
+}
+
+.social__link--facebook:hover path {
+  stroke: $basic-green;
+}
+
+.social__link--vkontakte:active path,
+.social__link--instagram:active path {
+  fill: $basic-green;
+  fill-opacity: 0.3;
+}
+
+.social__link--facebook:active path {
+  stroke: $basic-green;
+  opacity: 0.3;
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
