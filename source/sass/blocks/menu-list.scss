@@ -82,7 +82,7 @@
   }
 }
 
-.menu-list__item--current .menu-list__link--main {
+.menu-list__item--current.menu-list__item--main {
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basic-white;
   }

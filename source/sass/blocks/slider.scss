@@ -74,7 +74,7 @@
 }
 
 .slider__range {
-  --webkit-appearance: none;
+  appearance: none;
   outline: none;
   display: none;
 
@@ -97,7 +97,7 @@
 }
 
 .slider__range::-webkit-slider-thumb {
-  --webkit-appearance: none;
+  appearance: none;
   width: 34px;
   height: 34px;
   background-color: $basic-green;
@@ -124,3 +124,25 @@
 .slider__before:hover {
   border-bottom: 1px solid $basic-black;
 }
+
+/*.slider > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider img {
+  display: block;
+  user-select: none;
+
+}
+.slider .slider__range {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 428px;
+  margin: 0;
+}*/

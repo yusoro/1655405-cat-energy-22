@@ -65,10 +65,11 @@
   margin-bottom: 20px;
   clear: both;
   position: relative;
-  margin-right: 100px;
+
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    margin-right: 100px;
   }
 
   @media (min-width: $desktop-width) {
