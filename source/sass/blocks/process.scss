@@ -1,18 +1,23 @@
 .process {
-  background-color: $basic-white;
   margin-top: 27px;
   margin-bottom: 42px;
 }
 
 .process__wrapper {
-  margin: 0 20px;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    padding: 0 30px;
+    max-width: 900px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    padding: 0 110px;
+    max-width: 1440px;
   }
 }
 
@@ -20,6 +25,15 @@
   @include title;
   margin-bottom: 38px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
 }
 
 .process__steps {
@@ -33,8 +47,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
-    column-gap: 153px;
-    row-gap: 37px;
+    //column-gap: 153px;
+    //row-gap: 37px;
+    font-size: 16px;
+    line-height: 24px;
+    counter-reset: item-number;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,6 +62,118 @@
 }
 
 .process__item {
-  margin-left: 20px;
   margin-bottom: 20px;
+  clear: both;
+  position: relative;
+
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    margin-right: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+.process__item::after {
+  @media (min-width: $tablet-width) {
+    counter-increment: item-number;
+    content: counter(item-number);
+    width: 112px;
+    height: 280px;
+    color: $basic-grey;
+    font-size: 280px;
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    z-index: -1;
+
+    @include regular-text;
+  }
+}
+
+.process__item--useful::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-useful.svg") no-repeat 50%, $basic-green;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background-size: 30px;
+    margin-right: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.process__item--prepare::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-prepare.svg") no-repeat 50%, $basic-green;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background-size: 30px;
+    margin-right: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.process__item--replace::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-replace.svg") no-repeat 50%, $basic-green;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background-size: 30px;
+    margin-right: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
+}
+
+.process__item--result::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon-result.svg") no-repeat 50%, $basic-green;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    background-size: 30px;
+    margin-right: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+  }
 }

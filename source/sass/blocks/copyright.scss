@@ -1,0 +1,23 @@
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  @include text-content;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 22px;
+  }
+}

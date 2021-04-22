@@ -1,0 +1,72 @@
+.stats__number {
+  @include regular-text;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.stats__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: $special-light-grey;
+  width: 77px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
+  }
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    justify-content: flex-start;
+  }
+}
+
+.stats__item {
+  border: 1px solid $special-grey-2;
+  border-radius: 5px;
+  width: 124px;
+  height: 64px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 42px;
+  }
+}

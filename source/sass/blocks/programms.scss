@@ -3,15 +3,21 @@
 }
 
 .programms__wrapper {
-  margin: 22px 20px 0;
+  box-sizing: border-box;
+  padding: 22px 20px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
 
   @media (min-width: $tablet-width) {
-    margin: 22px 30px;
+    padding: 22px 30px;
+    max-width: 900px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 110px;
+    padding: 0 110px;
     padding-top: 82px;
+    max-width: 1440px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +52,73 @@
   margin: 0;
   margin-bottom: 29px;
   padding: 0;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px;
+  }
+}
+
+.programms__item--slim .programm__title::before {
+  content: "";
+  width: 50px;
+  height: 53px;
+  float: left;
+  background: url("../img/icon-slim.svg") no-repeat;
+  margin-right: 19px;
+  margin-top: -10px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    background-size: 200px;
+    float: right;
+    margin-right: 61px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 106px;
+    background-size: 100px;
+    float: left;
+    margin-top: -30px;
+    margin-left: 0;
+  }
+}
+
+.programms__item--muscles .programm__title::before {
+  content: "";
+  width: 67px;
+  height: 50px;
+  float: left;
+  margin-right: 11px;
+  margin-left: -10px;
+  background: url("../img/icon-fit.svg") no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    background-size: 268px;
+    float: right;
+    margin-right: 62px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+    height: 100px;
+    background-size: 134px;
+    float: left;
+    margin-top: -30px;
+    margin-left: -20px;
+    margin-right: 47px;
+  }
 }
 
 .programm__description {
@@ -60,6 +133,12 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 48px;
+  }
 }
 
 .programm__link {
@@ -69,6 +148,32 @@
   line-height: 16px;
   text-decoration: none;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.programm__link svg {
+  display: none;
+  width: 24px;
+  margin-left: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.programm__link:hover svg {
+  width: 32px;
+  transition: width 500ms;
 }
 
 .programms__item--slim {
