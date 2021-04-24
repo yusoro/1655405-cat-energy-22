@@ -1,5 +1,3 @@
-
-
 if (document.documentElement.clientWidth > 767) {
   document.querySelector(".slider__catlook-after").classList.remove("hidden");
   document.querySelectorAll(".slider").forEach(function(slider) {
@@ -8,7 +6,7 @@ if (document.documentElement.clientWidth > 767) {
     let div = document.createElement("div");
     let img = slider.querySelector("img");
     slider.insertBefore(div, img);
-    div.appendChild(img);
+    div.append(img);
     // Создаем ползунок
     let range = document.createElement("input");
     range.type = "range";
@@ -16,6 +14,10 @@ if (document.documentElement.clientWidth > 767) {
     range.oninput = function() {
     div.style.width = this.value + "%";
     };
-    slider.appendChild(range);
+    let sliderControls = document.querySelector(".slider__controls");
+    sliderControls.append(range);
+
+    let before = document.querySelector(".slider__after");
+    sliderControls.insertBefore(range, before);
     });
   }
