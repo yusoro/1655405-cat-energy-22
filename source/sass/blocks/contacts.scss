@@ -31,7 +31,7 @@
 .contacts__lead {
   @include title;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 20px;
   color: $special-black;
   grid-column: 1/2;
   padding-left: 20px;
@@ -59,7 +59,7 @@
   @include text-content;
   line-height: 20px;
   grid-column: 2/3;
-  padding-right: 20px;
+  padding-right: 25px;
   justify-self: flex-end;
 
   @media (min-width: $tablet-width) {

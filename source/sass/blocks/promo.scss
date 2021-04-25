@@ -1,5 +1,5 @@
 .promo {
-  background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") no-repeat;
+  background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") repeat-x;
   background-size: cover;
   background-position: 0 0, 65% -40px;
   position: relative;
@@ -9,15 +9,17 @@
     z-index: -2;
   }
 
-  &::before {
-    @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
+
+    &::before {
       content: "";
-      width: 720px;
-      height: 694px;
+      width: 1044px;
+      height: 696px;
       background: url("../img/bg-main-l.png") no-repeat;
+      background-size: cover;
       position: absolute;
-      top: -147px;
-      right: 0;
+      top: -140px;
+      left: 720px;
       z-index: -1;
     }
   }
@@ -41,6 +43,7 @@
     padding: 0 80px;
     grid-template-rows: min-content min-content min-content;
     grid-template-columns: 1fr;
+    margin-bottom: 35px;
   }
 }
 

@@ -9,7 +9,6 @@
 
 .form__input {
   @include form-text;
-
   border: 1px solid $input-border;
 
   &--petname,
@@ -20,10 +19,20 @@
   }
 }
 
+.form__input:hover {
+  border-color: $special-grey-2;
+}
+
+.form__input:focus, .form__input:active {
+  outline: none;
+  border-color: $special-dark-grey;
+}
+
 .form__fieldset--petinfo .form__input {
   height: 45px;
   padding: 13px 15px;
   box-sizing: border-box;
+  margin-left: 13px;
 }
 
 .form__fieldset--petinfo .form__label {
@@ -75,7 +84,7 @@
 
 .form__fieldset--programms {
   position: relative;
-  padding: 11px 0 20px;
+  padding: 11px 0 22px;
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
@@ -83,8 +92,8 @@
 
   &::after {
     @include line-element;
-    width: auto;
-    margin-left: -40px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
     margin-top: 15px;
 
     @media (min-width: $tablet-width) {
@@ -94,8 +103,8 @@
 
   &::before {
     @include line-element;
-    width: auto;
-    margin-left: -40px;
+    width: calc(100% + 40px);
+    margin-left: -20px;
     margin-bottom: 22px;
 
     @media (min-width: $tablet-width) {
@@ -117,14 +126,13 @@
 
 .form__input--radio,
 .form__input--checkbox {
-  margin-left: 0;
   margin-right: 15px;
   margin-bottom: 13px;
 }
 
 .form__fieldset--contacts {
   padding-top: 35px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
   color: $special-dark-grey;
 
   @media (min-width: $desktop-width) {
@@ -143,6 +151,7 @@
   height: 45px;
   padding: 13px 15px;
   box-sizing: border-box;
+  margin-left: 11px;
 
   &--email {
     width: auto;
@@ -164,12 +173,12 @@
 }
 
 .form__fieldset--comments {
-  padding-top: 38px;
+  padding-top: 37px;
   padding-bottom: 23px;
 }
 
 .form__fieldset--additional {
-  padding: 34px 0 34px;
+  padding: 40px 0 17px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -187,6 +196,8 @@
 
 .form__button {
   max-height: 52px;
+  width: 100%;
+  max-width: 282px;
 
   @media (min-width: $tablet-width) {
     max-width: 282px;
@@ -211,4 +222,65 @@
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
   }
+}
+
+.form__input--radio:checked + .form__label--radio::before {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  border-radius: 50%;
+  background: $basic-green;
+  border: 8px solid $basic-white;
+  top: -7px;
+  left: -45px;
+  box-shadow: 0 0 0 1px $special-grey-2,
+  0 2px 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+.form__input--radio + .form__label--radio::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: $basic-white;
+  top: -7px;
+  left: -45px;
+  box-shadow: 0 0 0 1px $special-grey-2,
+  0 2px 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+.form__input--radio:hover + .form__label--radio::before {
+  box-shadow: 0 0 0 1px $special-grey-2,
+  0 2px 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+.form__fieldset--programms .form__label--radio {
+  position: relative;
+  margin: 8px 0 15px 45px;
+}
+
+.form__input--checkbox + .form__label--checkbox::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $special-grey-2;
+  background: $basic-white;
+  left: -44px;
+  top: -5px;
+}
+
+.form__input--checkbox:checked + .form__label--checkbox::before {
+  content: "";
+
+  position: absolute;
+  background: url("../img/checkbox.svg") no-repeat center;
+}
+
+.form__label--checkbox {
+  margin-left: 45px;
+  position: relative;
+  margin-bottom: 24px;
 }
