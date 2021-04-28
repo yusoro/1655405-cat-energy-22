@@ -13,4 +13,3 @@ if (document.documentElement.clientWidth > 767) {
     div.style.width = this.value + "%";
     }
   })};
-
