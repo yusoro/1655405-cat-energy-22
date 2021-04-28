@@ -28,6 +28,7 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    @include regular-text;
     font-size: 18px;
     line-height: 24px;
 

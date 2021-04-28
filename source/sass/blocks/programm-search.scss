@@ -1,15 +1,12 @@
 .programm-search__wrapper {
-  padding: 0 20px;
   max-width: 600px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    padding: 0 66px 0 70px;
     max-width: 900px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 110px;
     max-width: 1440px;
   }
 }
@@ -21,12 +18,18 @@
   color: $basic-black;
   margin-top: 27px;
   margin-bottom: 37px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     margin-top:55px;
     margin-bottom: 55px;
+    margin-left: 70px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-top: 45px;
+    margin-left: 110px;
   }
 }
 
@@ -37,10 +40,16 @@
   color: $basic-black;
   text-transform: uppercase;
   margin-bottom: 39px;
+  margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 66px;
+    margin-left: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
   }
 }
