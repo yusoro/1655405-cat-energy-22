@@ -28,6 +28,7 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    @include regular-text;
     font-size: 18px;
     line-height: 24px;
 
@@ -62,7 +63,7 @@
 }
 
 .menu-list__item {
-  padding: 22px 0 24px;
+  padding: 22px 0 20px;
   text-align: center;
   border-top: 1px solid $menu-line;
 
