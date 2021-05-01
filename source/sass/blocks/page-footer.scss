@@ -1,3 +1,7 @@
+.page-footer {
+  background: $basic-grey;
+}
+
 .page-footer__wrapper {
   background: $basic-grey;
   padding: 0 20px;
@@ -13,6 +17,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 0 110px;
     max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 17px;
   }
 }
 
@@ -73,7 +79,8 @@
     grid-column: 3/4;
     padding-top: 48px;
     padding-bottom: 61px;
-    justify-content: flex-end;
+    justify-self: flex-end;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {

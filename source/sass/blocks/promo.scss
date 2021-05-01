@@ -11,12 +11,12 @@
   @media (min-width: $desktop-width) {
     &::before {
       content: "";
-      width: 100%;
+      width: 720px;
       height: 696px;
       background: url("../img/bg-main-l.png") no-repeat;
-      background-size: contain;
-      position: fixed;
-      top: 0;
+      background-size: cover;
+      position: absolute;
+      top: -140px;
       left: 720px;
       z-index: -1;
     }

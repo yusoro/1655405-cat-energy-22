@@ -6,6 +6,7 @@
   box-sizing: border-box;
   position: relative;
   min-width: 245px;
+  margin: 0 0 13px;
 
   &::before {
     content: "";
@@ -29,11 +30,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 76px;
+    margin: 0 0 76px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
+    width: 245px;
+    height: 289px;
+    margin: 0 0 0 79px;
   }
 }
 
