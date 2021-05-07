@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     max-width: 900px;
+    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,20 +18,19 @@
   line-height: 36px;
   color: $basic-black;
   margin-top: 27px;
-  margin-bottom: 37px;
+  margin-bottom: 39px;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 55px;
+    margin-top: 52px;
     margin-bottom: 55px;
     margin-left: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 45px;
-    margin-left: 110px;
+    margin: 39px 0 56px 110px;
   }
 }
 
@@ -40,13 +40,13 @@
   line-height: 18px;
   color: $basic-black;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-bottom: 37px;
   margin-left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 66px;
+    margin-bottom: 65px;
     margin-left: 70px;
   }
 

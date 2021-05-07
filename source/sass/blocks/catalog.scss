@@ -1,11 +1,10 @@
 .catalog__wrapper {
-  padding: 27px 0 35px;
+  padding: 27px 0 33px;
   margin: 0 auto;
-  max-width: 500px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    max-width: 896px;
+    //max-width: 896px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,12 +19,16 @@
   @include title;
   text-transform: none;
   line-height: 36px;
-  margin: 0 0 41px 20px;
+  margin: 0 auto 41px;
+  width: calc(100% - 40px);
+  max-width: 510px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 53px 0 83px 30px;
+    margin: 53px auto 83px;
+    width: calc(100% - 60px);
+    max-width: 900px;
   }
 
   @media (min-width: $desktop-width) {

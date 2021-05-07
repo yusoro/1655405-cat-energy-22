@@ -1,6 +1,6 @@
 .product-list-additional {
   position: relative;
-  padding: 45px 20px 0;
+  padding: 43px 20px 15px;
   border-top: 2px solid $basic-green;
 
   @media (min-width: $tablet-width) {
@@ -9,7 +9,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    padding: 93px 110px 0;
+    padding: 91px 110px 0;
     display: flex;
   }
 }
@@ -17,11 +17,11 @@
 .product-list-additional__title {
   @include regular-text;
   margin: 0;
+  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
   position: absolute;
   top: -15px;
-  left: 0;
   background: $basic-white;
   padding-left: 20px;
   padding-right: 22px;
@@ -32,12 +32,12 @@
     padding-left: 36px;
     padding-right: 36px;
     top: -25px;
-    margin-left: 30px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 40px;
     padding-right: 35px;
-    margin-left: 70px;
+    margin-left: -40px;
   }
 }
