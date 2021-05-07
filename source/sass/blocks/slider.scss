@@ -106,6 +106,7 @@
   height: 266px;
   width: 320px;
   text-align: left;
+
   @media (min-width: $tablet-width) {
     height: 620px;
     display: inline-block;
@@ -114,6 +115,7 @@
     margin-bottom: 15px;
     text-align: center;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     height: 635px;
@@ -204,6 +206,7 @@
 
 .slider__photos > .slider__before {
   border: none;
+
   @media (min-width: $tablet-width) {
     height: 620px;
     position: absolute;

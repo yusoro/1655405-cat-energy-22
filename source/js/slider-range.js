@@ -3,4 +3,3 @@
     range.oninput = function() {
     sliderBefore.style.width = this.value + "%";
     }
-

@@ -6,9 +6,8 @@
   box-sizing: border-box;
   position: relative;
   min-width: 245px;
-  margin: 0 0 13px;
   max-width: 510px;
-  margin: 0 auto;
+  margin: 0 auto 13px;
 
   &::before {
     content: "";
