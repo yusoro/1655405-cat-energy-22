@@ -7,7 +7,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    background: linear-gradient(to top, $basic-grey 462px, $basic-white 462px, $basic-white);
+    background-image: linear-gradient(to top, $special-light-grey 462px, $basic-white 462px),
+    linear-gradient(to top, $basic-grey 462px, $basic-white 462px);
+    background-repeat: no-repeat;
+    background-size: 35% 656px, 65% 656px;
+    background-position: 100% 0, 0 0;
     border-top: none;
   }
 }
@@ -26,6 +30,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
+    grid-row: 2/3;
     margin-bottom: 90px;
   }
 }
@@ -45,6 +50,7 @@
     grid-column: 1/2;
     margin-bottom: 5px;
     width: 436px;
+    grid-row: 3/4;
   }
 }
 
@@ -80,6 +86,7 @@
     margin: 0;
     align-items: flex-start;
     margin-bottom: 10px;
+    grid-row: 5/6;
   }
 }
 
@@ -100,8 +107,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 58px repeat(5, min-content);
     padding: 0 0 0 110px;
     max-width: 1440px;
-    height: 595px;
+    //height: 595px;
   }
 }

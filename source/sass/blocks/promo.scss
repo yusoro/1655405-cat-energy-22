@@ -4,6 +4,10 @@
   background-position: 0 0, 63% -40px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s@2x.jpg") repeat-x;
+  }
+
   @media (min-width: $tablet-width) {
     background: none;
   }
@@ -19,6 +23,10 @@
       top: -145px;
       right: 0;
       z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bg-main-l@2x.png");
+      }
     }
   }
 }

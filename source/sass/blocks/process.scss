@@ -79,13 +79,14 @@
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
-    margin-right: 85px;
+    margin-right: 80px;
     margin-bottom: 38px;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    min-height: 250px;
   }
 }
 
@@ -211,4 +212,36 @@
 .process__item--result,
 .process__item--replace {
   margin-bottom: 0;
+}
+
+.process__item--result br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.process__item--useful br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.process__item--replace br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

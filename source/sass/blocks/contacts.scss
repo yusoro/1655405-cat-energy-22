@@ -14,9 +14,10 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/5;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 230px 990px 1fr;
     grid-template-rows: min-content;
     margin: 0 -110px;
+    margin: 0;
     padding-top: 0;
   }
 }
@@ -45,16 +46,20 @@
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
+    grid-column: 2/3;
+    justify-self: flex-start;
     background-color: $basic-white;
     height: 201px;
     align-self: center;
-    margin-left: 110px;
+    //margin-left: 110px;
     padding-left: 76px;
     padding-top: 62px;
     z-index: 2;
     box-sizing: border-box;
     font-size: 20px;
     line-height: 23px;
+    width: 230px;
+    box-sizing: border-box;
   }
 }
 
@@ -84,17 +89,18 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-column: 2/3;
+    grid-column: 3/4;
     grid-row: 1/2;
     background-color: $basic-white;
     height: 201px;
     align-self: center;
     z-index: 2;
-    padding-left: 77px;
+    padding-left: 100px;
     padding-top: 55px;
     box-sizing: border-box;
     text-align: left;
     justify-self: flex-start;
+    width: 340px;
   }
 }
 
@@ -120,5 +126,6 @@
     grid-row: 1/2;
     z-index: 1;
     margin-top: 0;
+
   }
 }

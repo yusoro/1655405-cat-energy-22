@@ -1,10 +1,18 @@
 .header-logo-img {
   width: 33px;
   height: 38px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header-logo-text {
   width: 101px;
   height: 18px;
   padding-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
