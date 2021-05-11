@@ -16,7 +16,6 @@
     grid-column: 1/5;
     grid-template-columns: 1fr 230px 990px 1fr;
     grid-template-rows: min-content;
-    margin: 0 -110px;
     margin: 0;
     padding-top: 0;
   }
@@ -59,7 +58,6 @@
     font-size: 20px;
     line-height: 23px;
     width: 230px;
-    box-sizing: border-box;
   }
 }
 
@@ -126,6 +124,5 @@
     grid-row: 1/2;
     z-index: 1;
     margin-top: 0;
-
   }
 }
