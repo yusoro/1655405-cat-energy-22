@@ -1,29 +1,50 @@
 .product-list-additional {
   position: relative;
-  padding: 43px 20px 15px;
-  border-top: 2px solid $basic-green;
+  padding: 0 0 15px;
+
+  &::before {
+    content: "";
+    width: calc(100% - 120px);
+    height: 2px;
+    background-color: $basic-green;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      right: 0;
+      top: 87px;
+
+      @media (min-width: $desktop-width) {
+        right: 0;
+        top: 24px;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 90px 30px 0;
+    padding: 65px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    padding: 91px 110px 0;
+    padding: 0;
     display: flex;
+    flex-direction: column;
   }
 }
 
 .product-list-additional__title {
   @include regular-text;
   margin: 0;
-  margin-left: -20px;
   font-size: 24px;
   line-height: 24px;
-  position: absolute;
-  top: -15px;
+  display: inline-block;
+  vertical-align: baseline;
+  width: auto;
   background: $basic-white;
-  padding-left: 20px;
   padding-right: 22px;
 
   @media (min-width: $tablet-width) {
@@ -31,13 +52,45 @@
     line-height: 36px;
     padding-left: 36px;
     padding-right: 36px;
-    top: -25px;
-    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 40px;
+    padding-left: 35px;
     padding-right: 35px;
-    margin-left: -40px;
+  }
+}
+
+.product-list-additional__title-wrapper {
+  margin: 0 auto 30px;
+  max-width: 510px;
+  background-color: transparent;
+  width: calc(100% - 40px);
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    max-width: 900px;
+    margin: 0 auto 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1292px;
+  }
+}
+
+.product-list-additional__wrapper {
+  margin: 0 auto;
+  width: calc(100% - 40px);
+  max-width: 510px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    max-width: 900px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }

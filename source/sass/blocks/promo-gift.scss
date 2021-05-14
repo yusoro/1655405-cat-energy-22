@@ -5,8 +5,7 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
-  min-width: 245px;
-  max-width: 510px;
+  width: 100%;
   margin: 0 auto 13px;
 
   &::before {
@@ -32,7 +31,6 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 76px;
-    max-width: 900px;
   }
 
   @media (min-width: $desktop-width) {
