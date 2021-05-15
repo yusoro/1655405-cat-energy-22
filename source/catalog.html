@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo header-logo">
-          <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
-          <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header-logo-l.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-m.svg">
+            <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
+            <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          </picture>
         </a>
         <nav class="page-nav page-nav--closed page-nav--nojs">
           <button class="page-nav__toggle" type="button">
@@ -42,9 +51,9 @@
               <div class="product-item__wrapper">
                 <a class="product-item__link product-item__link--img" href="#">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/img-chicken-500-m.png 1x, img/img-chicken-500-m@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/img-chicken-500-l.png 1x, img/img-chicken-500-l@2x.png 2x">
-                  <img class="product-item__image product-item__image--s" src="img/img-chicken-500-s.png" srcset="img/img-chicken-500-s@2x.png" width="68" height="78" alt="Изображение упаковки корма">
+                    <source media="(min-width: 1440px)" srcset="img/img-chicken-500-l.png 1x, img/img-chicken-500-l@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/img-chicken-500-m.png 1x, img/img-chicken-500-m@2x.png 2x">
+                  <img class="product-item__image product-item__image--s" src="img/img-chicken-500-s.png" srcset="img/img-chicken-500-s@2x.png 2x" width="68" height="78" alt="Изображение упаковки корма">
                 </picture>
                 </a>
                 <a class="product-item__link product-item__link--title" href="#">
@@ -73,8 +82,8 @@
               <div class="product-item__wrapper">
                 <a class="product-item__link product-item__link--img" href="#">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/img-chicken-1000-m.png 1x, img/img-chicken-1000-m@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/img-chicken-1000-l.png 1x, img/img-chicken-1000-l@2x.png 2x">
+                    <source media="(min-width: 1440px)" srcset="img/img-chicken-1000-l.png 1x, img/img-chicken-1000-l@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/img-chicken-1000-m.png 1x, img/img-chicken-1000-m@2x.png 2x">
                   <img class="product-item__image product-item__image--m" src="img/img-chicken-1000-s.png" srcset="img/img-chicken-1000-s@2x.png 2x" width="84" height="101" alt="Изображение упаковки корма">
                   </picture>
                 </a>
@@ -104,8 +113,8 @@
               <div class="product-item__wrapper">
               <a class="product-item__link product-item__link--img" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/img-fish-500-m.png 1x, img/img-fish-500-m@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/img-fish-500-l.png 1x, img/img-fish-500-l@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/img-fish-500-l.png 1x, img/img-fish-500-l@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-fish-500-m.png 1x, img/img-fish-500-m@2x.png 2x">
                 <img class="product-item__image product-item__image--s" src="img/img-fish-500-s.png" srcset="img/img-fish-500-s@2x.png 2x" width="68" height="78" alt="Изображение упаковки корма">
                 </picture>
               </a>
@@ -135,8 +144,8 @@
               <div class="product-item__wrapper">
               <a class="product-item__link product-item__link--img" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/img-fish-1000-m.png 1x, img/img-fish-1000-m@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/img-fish-1000-l.png 1x, img/img-fish-1000-l@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/img-fish-1000-l.png 1x, img/img-fish-1000-l@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-fish-1000-m.png 1x, img/img-fish-1000-m@2x.png 2x">
                 <img class="product-item__image product-item__image--m" src="img/img-fish-1000-s.png" srcset="img/img-fish-1000-s@2x.png 2x" width="84" height="101" alt="Изображение упаковки корма">
                 </picture>
               </a>
@@ -166,8 +175,8 @@
               <div class="product-item__wrapper">
               <a class="product-item__link product-item__link--img" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/img-buckwheat-500-m.png 1x, img/img-buckwheat-500-m@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/img-buckwheat-500-l.png 1x, img/img-buckwheat-500-l@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/img-buckwheat-500-l.png 1x, img/img-buckwheat-500-l@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-buckwheat-500-m.png 1x, img/img-buckwheat-500-m@2x.png 2x">
                 <img class="product-item__image product-item__image--s" src="img/img-buckwheat-500-s.png" srcset="img/img-buckwheat-500-s@2x.png 2x" width="68" height="78" alt="Изображение упаковки корма">
                 </picture>
               </a>
@@ -197,8 +206,8 @@
               <div class="product-item__wrapper">
               <a class="product-item__link product-item__link--img" href="#">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/img-buckwheat-1000-m.png 1x, img/img-buckwheat-1000-m@2x.png 2x">
-                  <source media="(min-width: 768px)" srcset="img/img-buckwheat-1000-l.png 1x, img/img-buckwheat-1000-l@2x.png 2x">
+                  <source media="(min-width: 1440px)" srcset="img/img-buckwheat-1000-l.png 1x, img/img-buckwheat-1000-l@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/img-buckwheat-1000-m.png 1x, img/img-buckwheat-1000-m@2x.png 2x">
                 <img class="product-item__image product-item__image--m" src="img/img-buckwheat-1000-s.png" srcset="img/img-buckwheat-1000-s@2x.png 2x" width="84" height="101" alt="Изображение упаковки корма">
                 </picture>
               </a>
@@ -228,8 +237,8 @@
               <div class="product-item__wrapper">
                 <a class="product-item__link product-item__link--img" href="#">
                   <picture>
-                    <source media="(min-width: 1440px)" srcset="img/img-rice-500-m.png 1x, img/img-rice-500-m@2x.png 2x">
-                    <source media="(min-width: 768px)" srcset="img/img-rice-500-l.png 1x, img/img-rice-500-l@2x.png 2x">
+                    <source media="(min-width: 1440px)" srcset="img/img-rice-500-l.png 1x, img/img-rice-500-l@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/img-rice-500-m.png 1x, img/img-rice-500-m@2x.png 2x">
                   <img class="product-item__image product-item__image--s" src="img/img-rice-500-s.png" srcset="img/img-rice-500-s@2x.png 2x" width="68" height="78" alt="Изображение упаковки корма">
                   </picture>
                 </a>

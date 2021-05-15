@@ -180,6 +180,9 @@
 }
 
 .slider__catlook-before {
+  width: 311px;
+  height: 232px;
+
   @media (min-width: $tablet-width) {
     width: 677px;
     height: 520px;
@@ -191,6 +194,9 @@
 }
 
 .slider__catlook-after {
+  width: 251px;
+  height: 240px;
+
   @media (min-width: $tablet-width) {
     width: 545px;
     height: 520px;

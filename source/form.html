@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" sizes="16x16" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a href="index.html" class="page-header__logo header-logo">
-          <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
-          <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header-logo-l.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-m.svg">
+            <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
+            <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          </picture>
         </a>
         <nav class="page-nav page-nav--closed page-nav--nojs">
           <button class="page-nav__toggle" type="button">
