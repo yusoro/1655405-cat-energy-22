@@ -4,14 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="icon" href="img/favicons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo header-logo">
-          <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
-          <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header-logo-l.svg">
+            <source media="(min-width: 768px)" srcset="img/header-logo-m.svg">
+            <img class="header-logo-img" src="img/header-img-logo.svg" width="33" height="37" alt="Логотип сайта">
+            <img class="header-logo-text" src="img/header-text-logo.svg" width="101" height="18" alt="CAT ENERGY">
+          </picture>
         </a>
         <nav class="page-nav page-nav--closed page-nav--nojs">
           <button class="page-nav__toggle" type="button">
@@ -39,9 +48,9 @@
           <h1 class="promo__title">Функциональное<br> питание для котов</h1>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/promo-foodpack-l.png">
-            <source media="(min-width: 768px)" srcset="img/promo-foodpack-m.png">
-            <img class="promo__img" src="img/promo-foodpack.png" width="280" height="270" alt="Изображение упаковки корма для котов Cat Energy PRO">
+            <source media="(min-width: 1440px)" srcset="img/promo-foodpack-l.png 1x, img/promo-foodpack-l@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/promo-foodpack-m.png 1x, img/promo-foodpack-m@2x.png 2x">
+            <img class="promo__img" src="img/promo-foodpack.png" srcset="img/promo-foodpack@2x.png 2x" width="280" height="270" alt="Изображение упаковки корма для котов Cat Energy PRO">
           </picture>
           <a class="promo__programms common-button" href="catalog.html">Подобрать программу</a>
         </div>
@@ -114,13 +123,13 @@
             <div class="slider__photos">
               <div class="slider__before">
                 <picture>
-                  <source media="(min-width: 768px)" srcset="img/catlook-before.png">
-                  <img class="slider__catlook-before" src="img/catlook-before-s.png" width="311" height="232" alt="Фотография кота с лишним весом">
+                  <source media="(min-width: 768px)" srcset="img/catlook-before.png 1x, img/catlook-before@2x.png 2x">
+                  <img class="slider__catlook-before" src="img/catlook-before-s.png" srcset="img/catlook-before-s@2x.png 2x" width="311" height="232" alt="Фотография кота с лишним весом">
                 </picture>
               </div>
               <picture>
-                <source media="(min-width: 768px)" srcset="img/catlook-after.png">
-                <img class="slider__catlook-after hidden" src="img/catlook-after-s.png" width="251" height="240" alt="Фотография похудевшего кота">
+                <source media="(min-width: 768px)" srcset="img/catlook-after.png 1x, img/catlook-after@2x.png 2x">
+                <img class="slider__catlook-after hidden" src="img/catlook-after-s.png" srcset="img/catlook-after-s@2x.png 2x" width="251" height="240" alt="Фотография похудевшего кота">
               </picture>
             </div>
             <div class="slider__controls">
