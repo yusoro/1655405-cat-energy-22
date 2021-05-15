@@ -27,7 +27,7 @@
       z-index: -1;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../img/bg-main-l@2x.png") no-repeat;
+        background-image: url("../img/bg-main-l@2x.png");
       }
     }
   }
