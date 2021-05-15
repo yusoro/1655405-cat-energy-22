@@ -15,6 +15,7 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
+    padding-bottom: 7px;
   }
 }
 
@@ -73,7 +74,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 8px;
+    padding: 0 0 5px;
   }
 }
 

@@ -10,6 +10,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 12px;
   }
 }
 
@@ -27,6 +28,13 @@
     background-color: $basic-white;
     font-size: 14px;
     line-height: 14px;
+    width: fit-content;
+    padding: 0 10px;
+    margin: 0;
+
+    & br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -41,32 +49,30 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 708px;
+    width: 366px;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin-top: 5px;
+    grid-row: 4/5;
   }
 }
 
 .stats__item {
   border: 1px solid $special-grey-2;
   border-radius: 5px;
-  width: 124px;
-  height: 64px;
+  width: 122px;
+  height: 55px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
-    height: 77px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-right: 42px;
+    width: 160px;
+    height: 72px;
   }
 }

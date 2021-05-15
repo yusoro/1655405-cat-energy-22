@@ -21,6 +21,7 @@
   @media (min-width: $desktop-width) {
     padding: 50px 110px 12px;
     max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -29,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     content: url("../img/header-logo-m.svg");
@@ -36,15 +38,17 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     content: url("../img/header-logo-l.svg");
     width: 202px;
+    height: 60px;
 
     &:hover {
-      content: url("../img/header-logo-l-hover.svg");
+      opacity: 0.8;
     }
 
     &:active {
-      content: url("../img/header-logo-l-pressed.svg");
+      opacity: 0.6;
     }
   }
 }
