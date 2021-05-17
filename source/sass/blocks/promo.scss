@@ -6,6 +6,8 @@
 
   @media (min-resolution: 2dppx) {
     background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s@2x.jpg") repeat-x;
+    background-size: cover, auto 65%;
+    background-position: 0 0, 63% 0;
   }
 
   @media (min-width: $tablet-width) {

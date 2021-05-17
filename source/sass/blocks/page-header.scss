@@ -25,21 +25,31 @@
   }
 }
 
-.page-header__logo {
+.page-header__logo picture {
   width: 190px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__logo {
+  width: 190px;
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    content: url("../img/header-logo-m.svg");
-    width: 172px;
+    //content: url("../img/header-logo-m.svg");
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    content: url("../img/header-logo-l.svg");
+    //content: url("../img/header-logo-l.svg");
     width: 202px;
     height: 60px;
 
