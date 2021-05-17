@@ -6,6 +6,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 478px;
+    max-width: 610px;
     padding-bottom: 7px;
   }
 }

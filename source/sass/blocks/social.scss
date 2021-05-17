@@ -8,9 +8,14 @@
 
   @media (min-width: $tablet-width) {
     margin-right: 27px;
+    margin-left: -10px;
   }
 
   & svg {
+    width: 23px;
+    height: 16px;
+    fill: $special-grey-3;
+
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
@@ -26,6 +31,10 @@
   }
 
   & svg {
+    width: 16px;
+    height: 16px;
+    fill: $special-grey-3;
+
     @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
@@ -40,6 +49,11 @@
   }
 
   & svg {
+    width: 28px;
+    height: 33px;
+    stroke: $special-grey-3;
+    fill: $basic-white;
+
     @media (min-width: $tablet-width) {
       width: 28px;
       height: 33px;
@@ -47,22 +61,22 @@
   }
 }
 
-.social__link--vkontakte:hover path,
-.social__link--instagram:hover path {
+.social__link--vkontakte:hover svg,
+.social__link--instagram:hover svg {
   fill: $basic-green;
 }
 
-.social__link--facebook:hover path {
+.social__link--facebook:hover svg {
   stroke: $basic-green;
 }
 
-.social__link--vkontakte:active path,
-.social__link--instagram:active path {
+.social__link--vkontakte:active svg,
+.social__link--instagram:active svg {
   fill: $basic-green;
   fill-opacity: 0.3;
 }
 
-.social__link--facebook:active path {
+.social__link--facebook:active svg {
   stroke: $basic-green;
   opacity: 0.3;
 }

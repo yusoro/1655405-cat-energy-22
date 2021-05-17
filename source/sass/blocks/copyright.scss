@@ -4,7 +4,7 @@
   align-items: center;
   text-decoration: none;
 
-  &:hover path {
+  &:hover svg {
     fill: $basic-green;
   }
 
@@ -20,4 +20,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 22px;
   }
+}
+
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+  fill: $special-grey-3;
 }
