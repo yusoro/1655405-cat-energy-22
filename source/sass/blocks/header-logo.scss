@@ -1,5 +1,5 @@
-.header-logo-img {
-  width: 33px;
+.header-logo {
+  width: 190px;
   height: 38px;
 
   @media (min-width: $tablet-width) {
@@ -13,13 +13,17 @@
   }
 }
 
-.header-logo-text {
-  width: 101px;
-  height: 18px;
-  padding-top: 3px;
-  margin-left: auto;
+.header-logo__img {
+ width: 190px;
+ height: 38px;
 
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
+ @media (min-width: $tablet-width) {
+  width: 174px;
+  height: 52px;
+}
+
+@media (min-width: $desktop-width) {
+  width: 202px;
+  height: 60px;
+}
 }
