@@ -1,5 +1,6 @@
 .promo-gift {
   background: url("../img/gift-bg.png") no-repeat top;
+  background-color: $basic-green;
   background-size: cover;
   background-position-y: 70%;
   text-align: center;
@@ -37,8 +38,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 76px;
-    background: url("../img/gift-bg-m.png");
-    background-size: 708px 200px;
+    background: url("../img/gift-bg-m.png") no-repeat;
+    background-color: $basic-green;
+    background-size: cover;
     background-position-y: 67%;
 
     @media (min-resolution: 2dppx) {
@@ -54,6 +56,7 @@
     height: 289px;
     margin: 0 0 0 79px;
     background: url("../img/gift-bg.png") no-repeat;
+    background-color: $basic-green;
     background-size: cover;
     background-position-x: right;
 
