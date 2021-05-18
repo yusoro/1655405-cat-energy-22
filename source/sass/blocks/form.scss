@@ -143,7 +143,7 @@
 
 .form__fieldset--programms {
   position: relative;
-  padding: 0 20px 10px;
+  padding: 0 15px 10px;
 
 
   &::after {
@@ -161,7 +161,7 @@
     @include line-element;
     width: calc(100% + 40px);
     margin-left: -20px;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -170,8 +170,8 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $line-color;
-    padding: 20px 0 20px 29px;
-    margin: 0 auto 63px;
+    padding: 20px 0 18px 24px;
+    margin: 0 auto 60px;
     width: calc(100% - 140px);
     max-width: 900px;
     box-sizing: border-box;
@@ -180,10 +180,10 @@
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     margin: 0 110px 25px 0;
-    padding-top: 27px;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     width: 568px;
-    height: 200px;
+    height: min-content;
   }
 }
 
@@ -191,18 +191,18 @@
   position: relative;
   padding: 10px 10px 10px 45px;
   max-width: 600px;
-  margin: 8px auto 0;
+  margin: 6px auto 0;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 2px;
     padding: 16px 15px 16px 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 485px;
-    margin-bottom: 0;
+    margin-bottom: 2px;
 
     &:last-of-type {
       margin-bottom: 0;
@@ -237,7 +237,7 @@
   padding-bottom: 15px;
   color: $special-dark-grey;
   position: relative;
-  margin-top: 32px;
+  margin-top: 34px;
 
   @media (min-width: $tablet-width) {
     padding-top: 90px;
@@ -351,10 +351,10 @@
 }
 
 .form__fieldset--additional {
-  padding: 25px 20px 17px;
+  padding: 25px 20px 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 30px 30px 70px;
+    padding: 42px 30px 30px 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -419,6 +419,8 @@
 }
 
 .form__fieldset--petinfo {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 52px;
   }
@@ -491,16 +493,16 @@
   position: absolute;
   width: 26px;
   height: 26px;
-  box-sizing: border-box;
+  //box-sizing: border-box;
   border: 1px solid $special-grey-2;
   background: $basic-white;
-  left: 10px;
+  left: 5px;
   top: 6px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
-    top: 5px;
+    top: 4px;
     left: 5px;
   }
 }
@@ -518,8 +520,8 @@
 
 .form__input--checkbox:focus + .form__label--checkbox,
 .form__input--radio:focus + .form__label--radio {
-  outline: 2px solid $basic-green;
-  outline-offset: -2px;
+  outline: 1px solid $basic-green;
+  outline-offset: -1px;
 }
 
 .form__label--checkbox {
@@ -538,6 +540,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 45px;
+    padding-right: 0;
   }
 }
 
@@ -556,6 +559,7 @@
   width: 20px;
   height: 14px;
   stroke: $special-dark-grey-2;
+  fill: none;
 
   @media (min-width: $tablet-width) {
     right: 17px;

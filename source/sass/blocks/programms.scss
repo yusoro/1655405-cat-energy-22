@@ -181,6 +181,9 @@
 
 .programm__link svg {
   width: 24px;
+  height: 12px;
+  fill: $basic-black;
+  stroke: $basic-black;
   margin-left: 15px;
 
   @media (min-width: $tablet-width) {
