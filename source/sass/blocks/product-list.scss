@@ -30,6 +30,7 @@
 .product-list--additional {
   margin: 0;
   width: 100%;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -37,7 +38,7 @@
     border: 1px solid $special-grey-2;
     border-bottom: none;
     gap: 0;
-    margin: 0 0 69px;
+    margin: 0 0 67px;
     padding: 0;
     box-sizing: border-box;
   }

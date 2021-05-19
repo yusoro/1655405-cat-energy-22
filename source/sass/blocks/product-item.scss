@@ -306,7 +306,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 26px 38px 26px;
+    padding: 25px 38px 27px 36px;
     background: $basic-white;
     max-width: 894px;
   }
@@ -331,6 +331,7 @@
     grid-column: 1/2;
     font-size: 20px;
     line-height: 20px;
+    margin: 0 0 10px;
   }
 
   @media (min-width: $desktop-width) {
