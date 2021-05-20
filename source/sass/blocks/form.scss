@@ -249,7 +249,6 @@
   padding-top: 35px;
   padding-bottom: 15px;
   color: $special-dark-grey;
-  //position: relative;
   margin-top: 3px;
 
   @media (min-width: $tablet-width) {
@@ -328,10 +327,6 @@
 
 .form__fieldset--contacts .form__legend {
   padding-top: 15px;
-  /*position: absolute;
-  left: 20px;
-  top: -20px;
-  background-color: $basic-white;*/
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -419,7 +414,6 @@
 
 .form__fieldset--additional .form__label {
   @media (min-width: $tablet-width) {
-    //flex-basis: 40%;
     width: 221px;
 
     &:nth-of-type(odd) {
@@ -516,7 +510,6 @@
   position: absolute;
   width: 26px;
   height: 26px;
-  //box-sizing: border-box;
   border: 1px solid $special-grey-2;
   background: $basic-white;
   left: 5px;

@@ -57,8 +57,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: min-content min-content;
-    //column-gap: 153px;
-    //row-gap: 37px;
     font-size: 16px;
     line-height: 24px;
     counter-reset: item-number;
@@ -221,29 +219,5 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-  }
-}
-
-.process__item--useful br {
-  //display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    //display: none;
-  }
-}
-
-.process__item--replace br {
-  //display: none;
-
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-
-  @media (min-width: $desktop-width) {
-    //display: none;
   }
 }
