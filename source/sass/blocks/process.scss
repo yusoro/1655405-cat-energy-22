@@ -225,25 +225,25 @@
 }
 
 .process__item--useful br {
-  display: none;
+  //display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    //display: none;
   }
 }
 
 .process__item--replace br {
-  display: none;
+  //display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
   }
 
   @media (min-width: $desktop-width) {
-    display: none;
+    //display: none;
   }
 }
