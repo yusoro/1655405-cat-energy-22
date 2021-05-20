@@ -70,6 +70,7 @@
 
   @media (min-width: $desktop-width) {
     width: 569px;
+    margin: 0 0 20px auto;
   }
 }
 
@@ -179,10 +180,11 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    margin: 0 110px 25px 0;
+    margin: 0 0 25px 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 568px;
+    box-sizing: border-box;
     height: min-content;
   }
 }
@@ -218,11 +220,23 @@
   padding: 0 20px 0;
   margin-left: -20px;
 
+  @media (min-width: 680px) {
+    margin-left: calc((100% - 640px)/2);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
     margin-left: -40px;
+  }
+
+  @media (min-width: 1035px) {
+    margin-left: calc((100% - 980px)/2);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: calc((100% - 1300px)/2);
   }
 }
 
@@ -236,7 +250,7 @@
   padding-top: 68px;
   padding-bottom: 15px;
   color: $special-dark-grey;
-  position: relative;
+  //position: relative;
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
@@ -249,7 +263,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    padding: 90px 110px 0 110px;
+    padding: 90px 110px 0 calc((100% - 1220px)/2);
     margin-top: 17px;
     margin-bottom: 40px;
   }
@@ -314,7 +328,7 @@
 }
 
 .form__fieldset--contacts .form__legend {
-  position: absolute;
+  /*position: absolute;
   left: 20px;
   top: -20px;
   background-color: $basic-white;
@@ -322,10 +336,10 @@
   @media (min-width: $tablet-width) {
     left: 70px;
     top: -20px;
-  }
+  }*/
 
   @media (min-width: $desktop-width) {
-    left: 110px;
+    margin-left: -45px;
   }
 }
 
@@ -362,11 +376,16 @@
 
     & .form__legend {
       padding-bottom: 10px;
+      margin-left: -36px;
     }
   }
 
+  @media (min-width: 1035px) {
+    padding-left: calc((100% - 900px)/2);
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 40px 110px 15px;
+    padding: 40px 110px 15px calc((100% - 1220px)/2);
     justify-content: space-between;
   }
 }
@@ -427,9 +446,12 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 1/2;
-    margin-right: 80px;
-    padding-left: 110px;
+    margin-right: 40px;
+    padding-left: 0;
     padding-right: 0;
+    width: 679px;
+    box-sizing: border-box;
+    margin-left: auto;
   }
 }
 
