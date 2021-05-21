@@ -11,17 +11,19 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 24px 30px 12px;
+    padding: 24px 0 12px;
     flex-direction: row;
     justify-content: space-between;
-    //flex-wrap: wrap;
     align-items: flex-end;
+    width: calc(100% - 60px);
+    max-width: 900px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     padding: 50px 110px 12px;
+    width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
   }
 }
 
@@ -37,19 +39,14 @@
 
 .page-header__logo {
   width: 190px;
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    //content: url("../img/header-logo-m.svg");
     width: 174px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    //content: url("../img/header-logo-l.svg");
     width: 202px;
     height: 60px;
 

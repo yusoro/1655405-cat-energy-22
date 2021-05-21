@@ -1,14 +1,8 @@
 .programm-search__wrapper {
-  //max-width: 600px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    //max-width: 900px;
     box-sizing: border-box;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1440px;
   }
 }
 
@@ -31,7 +25,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 39px 0 56px 110px;
+    margin: 39px auto 56px;
+    max-width: 1220px;
   }
 }
 
@@ -54,7 +49,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
-    margin-bottom: 65px;
+    max-width: 1220px;
   }
 }

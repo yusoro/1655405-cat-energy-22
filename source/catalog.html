@@ -10,6 +10,10 @@
     <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="js/script.min.js" as="script">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -23,7 +27,7 @@
         </a>
         <nav class="page-nav page-nav--closed page-nav--nojs">
           <button class="page-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
           <div class="page-nav__wrapper">
             <ul class="menu-list">
@@ -85,8 +89,8 @@
                 <a class="product-item__link product-item__link--img" href="#">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/img-chicken-1000-l.webp 1x, img/img-chicken-1000-l@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/img-chicken-1000-m.webp 1x, img/img-chicken-1000-m@2x.webp 2x">
-                  <source type="image/webp" srcset="img/img-chicken-1000-s.webp 1x, img/img-chicken-1000-s@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/img-chicken-1000-m.webp 1x, img/img-chicken-1000-m@2x.webp 2x">
+                    <source type="image/webp" srcset="img/img-chicken-1000-s.webp 1x, img/img-chicken-1000-s@2x.webp 2x">
                     <source media="(min-width: 1440px)" srcset="img/img-chicken-1000-l.png 1x, img/img-chicken-1000-l@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/img-chicken-1000-m.png 1x, img/img-chicken-1000-m@2x.png 2x">
                   <img class="product-item__image product-item__image--m" src="img/img-chicken-1000-s.png" srcset="img/img-chicken-1000-s@2x.png 2x" width="84" height="101" alt="Изображение упаковки корма">
@@ -366,9 +370,9 @@
           <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258684!2d30.32085335171239!3d59.93871648178726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1616752726920!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="page-footer__logo">
-          <a href="#">
+          <a href="index.html">
             <svg width="128" height="24">
-              <use xlink:href="img/sprite.svg#footer-logo"></use>
+              <use xlink:href="img/sprite/sprite.svg#footer-text-logo"></use>
             </svg>
           </a>
         </div>
@@ -377,7 +381,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg width="23" height="16" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
@@ -385,7 +389,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <svg width="16" height="16" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#ig-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_instagram"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
@@ -393,7 +397,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg width="22" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#fb-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_facebook"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
@@ -404,12 +408,12 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <svg width="27" height="34" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#html-logo"></use>
+              <use xlink:href="img/sprite/sprite.svg#academy-logo"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/mobile-menu.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
   </html>

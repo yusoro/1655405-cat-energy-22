@@ -10,6 +10,10 @@
     <link rel="apple-touch-icon" href="img/favicons/favicon-152.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="preload" href="js/script.min.js" as="script">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -23,7 +27,7 @@
         </a>
         <nav class="page-nav page-nav--closed page-nav--nojs">
           <button class="page-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
+            <span class="visually-hidden">Открыть/закрыть меню</span>
           </button>
           <div class="page-nav__wrapper">
             <ul class="menu-list">
@@ -67,7 +71,7 @@
             <a class="programm__link" href="#">
               <span>Каталог slim</span>
               <svg width="24" height="12">
-                <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </div>
@@ -78,7 +82,7 @@
             <a class="programm__link" href="#">
               <span>Каталог pro</span>
               <svg width="24" height="12">
-                <use xlink:href="img/sprite.svg#arrow-icon"></use>
+                <use xlink:href="img/sprite/sprite.svg#icon-arrow"></use>
               </svg>
             </a>
           </div>
@@ -88,7 +92,7 @@
         <div class="process__wrapper">
           <h2 class="process__title">Как это работает</h2>
           <ul class="process__steps">
-            <li class="process__item process__item--useful">Функциональное питание<br>
+            <li class="process__item process__item--useful">Функциональное питание <br>
               содержит только полезные
               питательные вещества.</li>
             <li class="process__item process__item--prepare">Выпускается в виде порошка,
@@ -168,7 +172,7 @@
         <div class="page-footer__logo">
           <a href="#">
             <svg width="128" height="24">
-              <use xlink:href="img/sprite.svg#footer-logo"></use>
+              <use xlink:href="img/sprite/sprite.svg#footer-text-logo"></use>
             </svg>
           </a>
         </div>
@@ -177,7 +181,7 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
                 <svg width="23" height="16" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_vkontakte"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Вконтакте</span>
               </a>
@@ -185,7 +189,7 @@
             <li class="social__item">
               <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
                 <svg width="16" height="16" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#ig-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_instagram"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Инстаграме</span>
               </a>
@@ -193,7 +197,7 @@
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
                 <svg width="22" height="22" aria-hidden="true" focusable="false">
-                  <use xlink:href="img/sprite.svg#fb-icon"></use>
+                  <use xlink:href="img/sprite/sprite.svg#icon_facebook"></use>
                 </svg>
                 <span class="visually-hidden">Мы в Фейсбуке</span>
               </a>
@@ -204,7 +208,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
             <svg width="27" height="34" aria-hidden="true" focusable="false">
-              <use xlink:href="img/sprite.svg#html-logo"></use>
+              <use xlink:href="img/sprite/sprite.svg#academy-logo"></use>
             </svg>
           </a>
         </div>
