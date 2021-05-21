@@ -65,7 +65,7 @@
   @include text-content;
   line-height: 20px;
   grid-column: 2/3;
-  padding-right: 25px;
+  padding-right: 20px;
   justify-self: flex-end;
 
   & br:last-of-type {
@@ -108,6 +108,7 @@
   border: none;
   grid-column: 1/3;
   width: 100%;
+  height: 362px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/4;

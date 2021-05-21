@@ -1,13 +1,19 @@
 .promo {
-  background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") repeat-x;
+  background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") no-repeat;
   background-size: cover, auto 80%;
   background-position: 0 0, 63% -40px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s@2x.jpg") repeat-x;
+    background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s@2x.jpg") no-repeat;
     background-size: cover, auto 65%;
     background-position: 0 0, 63% 0;
+  }
+
+  @media (min-width: 577px) {
+    background: linear-gradient($green-mask 302px, $basic-white 302px, $basic-white) no-repeat, url("../img/bg-main-s.jpg") no-repeat;
+    background-size: cover, auto 107%;
+    background-position: 0 0, 63% -40px;
   }
 
   @media (min-width: $tablet-width) {

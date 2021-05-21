@@ -170,6 +170,38 @@
   }
 }
 
+.slider__range::-moz-range-track {
+  height: 6px;
+  background: $special-grey-2;
+  border-radius: 6px;
+  outline: none;
+}
+
+.slider__range::-moz-range-thumb {
+  appearance: none;
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  background-color: $basic-green;
+  border: 13px solid $basic-white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px $special-grey-2,
+    0 2px 1px 0 $thumb-shadow;
+  position: relative;
+  top: -15px;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $special-grey-2,
+      0 2px 4px 0 $thumb-shadow-hover;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 1px $basic-green,
+      0 3px 5px 0 $thumb-shadow-active;
+  }
+}
+
 .slider__legend:hover {
   border-bottom: 1px solid $basic-black;
 }
