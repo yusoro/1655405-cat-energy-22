@@ -19,14 +19,19 @@ let before = document.querySelector(".slider__catlook-before");
 let after = document.querySelector(".slider__catlook-after");
 let toggler = document.querySelector(".slider__input");
 
-toggler.onchange = function() {
+if (toggler) {
+  toggler.onchange = function() {
   before.classList.toggle("hidden");
   after.classList.toggle("hidden");
+}
 }
 
 //slider-range
 let sliderBefore = document.querySelector(".slider__before");
 let range = document.querySelector(".slider__range");
-range.oninput = function() {
+
+if (range) {
+  range.oninput = function() {
 sliderBefore.style.width = this.value + "%";
+}
 }
