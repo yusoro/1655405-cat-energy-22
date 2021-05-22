@@ -31,10 +31,6 @@
     width: fit-content;
     padding: 0 10px;
     margin: 0;
-
-    & br {
-      display: none;
-    }
   }
 
   @media (min-width: $desktop-width) {
