@@ -106,13 +106,14 @@
   text-transform: none;
   color: $basic-black;
   margin: 20px auto 45px;
-  width: 200px;
+  width: 162px;
 
   @media (min-width: $tablet-width) {
     align-self: center;
     justify-self: flex-start;
     margin: 17px 0 20px 30px;
     font-size: 16px;
+    width: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -172,7 +173,7 @@
 
   @media (min-width: $tablet-width) {
     border: 1px solid $line-color;
-    padding: 20px 0 18px 24px;
+    padding: 20px 0 15px 24px;
     margin: 0 auto 75px;
     width: calc(100% - 140px);
     max-width: 900px;
@@ -181,8 +182,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
-    margin: 0 0 5px 20px;
-    padding: 20px 0 20px 45px;
+    margin: 0 0 5px 38px;
+    padding: 20px 0 20px 25px;
     width: 590px;
     box-sizing: border-box;
     height: min-content;
@@ -191,15 +192,16 @@
 
 .form__fieldset--programms .form__label--radio {
   position: relative;
-  padding: 10px 10px 10px 50px;
+  padding: 10px 10px 5px 50px;
   max-width: 600px;
-  margin: 6px auto 0;
+  margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
+  line-height: 28px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 2px;
-    padding: 16px 15px 16px 60px;
+    padding: 10px 15px 14px 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -253,15 +255,16 @@
   margin-top: 3px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 70px;
-    margin-bottom: 31px;
-    margin-right: 0;
+    padding-top: 73px;
+    margin: 0 0 31px;
     padding-right: 65px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 75px 110px 0 calc((100% - 1220px) / 2);
     margin-top: 17px;
     margin-bottom: 40px;
@@ -318,19 +321,17 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 27px;
-    flex-basis: 50%;
-
-    &:nth-of-type(1) {
-      margin-right: 78px;
-    }
+    max-width: 47%;
   }
 }
 
 .form__fieldset--contacts .form__legend {
   padding-top: 15px;
+  width: 187px;
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    width: 512px;
   }
 
   @media (min-width: $desktop-width) {
@@ -360,10 +361,10 @@
 }
 
 .form__fieldset--additional {
-  padding: 25px 20px 25px;
+  padding: 25px 20px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 42px 30px 30px 70px;
+    padding: 42px 30px 22px 70px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -380,7 +381,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 40px 110px 15px calc((100% - 1220px) / 2);
+    padding: 40px 110px 10px calc((100% - 1220px) / 2);
     justify-content: space-between;
   }
 }
@@ -414,6 +415,8 @@
 }
 
 .form__fieldset--additional .form__label {
+  line-height: 28px;
+
   @media (min-width: $tablet-width) {
     width: 221px;
 
@@ -458,7 +461,7 @@
   height: 30px;
   border-radius: 50%;
   background: $basic-white;
-  top: 4px;
+  top: 10px;
   left: 5px;
   box-shadow: 0 0 0 1px $special-grey-2;
 
@@ -478,7 +481,7 @@
   border-radius: 50%;
   background: $basic-green;
   border: 8px solid $basic-white;
-  top: 4px;
+  top: 10px;
   left: 5px;
   box-shadow: 0 0 0 1px $special-grey-2;
 
@@ -499,10 +502,10 @@
   box-shadow: 0 0 0 1px $grey-hover;
 }
 
-.form__input--radio:checked:disabled + .form__label--radio::before,
-.form__input--checkbox:checked:disabled + .form__label--checkbox::before,
-.form__input--radio:disabled + .form__label--radio::before,
-.form__input--checkbox:disabled + .form__label--checkbox::before {
+.form__input--radio:disabled + .form__label--radio,
+.form__input--checkbox:checked:disabled + .form__label--checkbox,
+.form__input--radio:checked:disabled + .form__label--radio,
+.form__input--checkbox:disabled + .form__label--checkbox {
   opacity: 0.3;
 }
 
@@ -513,8 +516,8 @@
   height: 26px;
   border: 1px solid $special-grey-2;
   background: $basic-white;
-  left: 5px;
-  top: 6px;
+  left: 3px;
+  top: 10px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
@@ -542,17 +545,17 @@
 }
 
 .form__label--checkbox {
-  padding: 10px 10px 10px 45px;
+  padding: 10px 10px 4px 45px;
   position: relative;
   width: 100%;
   max-width: 600px;
-  margin: 0 auto 5px;
+  margin: 0 auto;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 20px;
     box-sizing: content-box;
-    padding: 16px 15px 16px 59px;
+    padding: 10px 15px 16px 59px;
   }
 
   @media (min-width: $desktop-width) {
