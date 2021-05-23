@@ -17,6 +17,10 @@
     width: 100%;
     padding: 0 0 33px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 5px 33px;
+  }
 }
 
 .feature-list__item {

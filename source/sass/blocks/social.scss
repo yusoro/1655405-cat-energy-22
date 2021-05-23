@@ -4,11 +4,10 @@
 }
 
 .social__link--vkontakte {
-  margin-right: 33px;
+  padding: 0 20px 0 10px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 27px;
-    margin-left: -10px;
+    padding: 0 15px 0 15px;
   }
 
   & svg {
@@ -24,11 +23,9 @@
 }
 
 .social__link--instagram {
-  margin-right: 32px;
+  padding: 0 15px 0 15px;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 20;
-  }
+  @media (min-width: $tablet-width) {}
 
   & svg {
     width: 16px;
@@ -43,7 +40,10 @@
 }
 
 .social__link--facebook {
+  padding: 0 15px 0 15px;
+
   @media (min-width: $tablet-width) {
+    padding: 0 25px 0 5px;
     width: 28px;
     height: 33px;
   }
@@ -82,10 +82,11 @@
 }
 
 .social__list {
+  width: fit-content;
   list-style: none;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
