@@ -149,9 +149,9 @@
     }
   }
 
-    @media (min-width: $tablet-width) {
-      padding: 0 45px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 8px;
@@ -223,7 +223,7 @@
   line-height: 16px;
   margin-bottom: 21px;
 
-   @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 18px;
     padding: 15px 35px 0;

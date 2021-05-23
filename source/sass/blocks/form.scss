@@ -504,7 +504,7 @@
 
 .form__input--radio:disabled + .form__label--radio,
 .form__input--checkbox:checked:disabled + .form__label--checkbox,
-.form__input--radio:disabled + .form__label--radio,
+.form__input--radio:checked:disabled + .form__label--radio,
 .form__input--checkbox:disabled + .form__label--checkbox {
   opacity: 0.3;
 }
